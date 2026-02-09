@@ -15,6 +15,14 @@
 	</div>
 	
 	<div id="content">
+		<div id = "admin" class="login">
+		<div class="box"><p>Admin</p></div>
+		
+		<button type="button" >Login</button>
+		</div>
+		<div id ="student" class="login">
+		<div class="box"><p>Student</p></div>
+		<button type="button" >Login</button></div>
 	</div>
 	<div id="footer">
 	</div>
