@@ -15,17 +15,22 @@
 	</div>
 	
 	<div id="content">
-		<div id = "admin" class="login">
-		<div class="box"><p>Admin</p></div>
+		<div id = "admin" class="card">
+		<div class="card-title"><p>Admin</p></div>
 		
-		<button type="button" >Login</button>
+		<button class="card-action" type="button" >Login</button>
 		</div>
-		<div id ="student" class="login">
-		<div class="box"><p>Student</p></div>
-		<button type="button" >Login</button></div>
+		<div id ="student" class="card">
+		<div class="card-title"><p>Student</p></div>
+		<button class="card-action" type="button" >Login</button></div>
 	</div>
 	<div id="footer">
+	
+	<div>Contact Us</div>
+	<div>Email: example123@gmail.com</div>
+	<div>Address: Flat no. 123 near colony</div>
 	</div>
+	
 	</div>
 </body>
 </html>

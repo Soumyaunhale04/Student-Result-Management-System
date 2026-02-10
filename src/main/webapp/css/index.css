@@ -1,53 +1,68 @@
-@charset "UTF-8";
 *{
-	padding:0;
-	margin:0;
+    padding:0;
+    margin:0;
 }
- 
+
 #container{
-	display:grid;
-	min-height: 100vh;
-	grid-template-columns: auto, 1fr, auto;
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
+
 #header{
-	text-align: center;
-	background-color: rgb(0, 128, 192);
-	color: white;
-	padding:15px 0px;
-	font-size: 18px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    text-align: center;
+    background-color: rgb(0, 128, 192);
+    color: white;
+    padding:15px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.login{
-	height: 300px;
-	width:350px;
-	background-color: #c0c0c0;
-	border-radius: 15px;
-	margin-top: 80px;
-	margin-bottom: 10px;
-	font-size:40px;
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	flex-direction: column;
-}
-.box{
-	background-color:#8080ff;
-	width: 150px;
-	height: 50px;
-}
 #content{
-	display: flex;
-	justify-content: space-evenly;
-	
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(https://synques-dyn-cdn.s3.ap-south-1.amazonaws.com/oriental/images/oriental-school.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.card{
+    height: 120px;
+    width:200px;
+    background-color: #c0c0c0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* ⭐ KEY LINE */
+    align-items:center;
+    padding: 20px;
+}
+
+.card-title{
+    background-color:#8080ff;
+    font-size: 28px;
+    padding: 6px 20px;
+    border-radius: 15px;
+}
+
+.card-action{
+    font-size: 16px;
+    padding: 8px 20px;
+    cursor:pointer;
+    font-weight: bold;
+}
 
 #footer{
-	
-	background-color: rgb(0, 128, 192);
-	color: white;
-	font-size: 5px;
+    background-color: rgb(0, 128, 192);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
 }
