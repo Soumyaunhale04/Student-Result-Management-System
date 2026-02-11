@@ -45,6 +45,7 @@
     font-size: 28px;
     padding: 6px 20px;
     border-radius: 15px;
+    
 }
 
 .card-action{
@@ -64,4 +65,18 @@
     justify-content: center;
     align-items:center;
     flex-direction: row;
+}
+
+
+
+/* login.jsp */
+
+#info{
+	height: 200px;
+	width: 300px;
+	background-color: #c0c0c0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-size: 18px;
 }

@@ -5,7 +5,7 @@ import util.DBConnection;
 import java.sql.*;
 
 public class StudentDao {
-	public Student validateStudent(int rollNo, String password) {
+	public  Student validateStudent(int rollNo, String password) {
 		Student s = null;
 		Connection con = DBConnection.getConnection();
 		
@@ -24,6 +24,8 @@ public class StudentDao {
 				s.setBranch(rs.getString("branch"));
 				s.setSemester(rs.getInt("semester"));
 				s.setPassword(rs.getString("student_password"));
+				ps.close();
+				con.close();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

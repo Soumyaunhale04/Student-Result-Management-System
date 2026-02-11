@@ -13,7 +13,7 @@ public class AdminDao {
 		Admin ad = null;
 		
 		Connection con = DBConnection.getConnection();
-		String query = "SELECT * FROM admin WHERE admin_id=? AND admin_password = ?";
+		String query = "SELECT * FROM admin WHERE admin_id=? AND admin_password =?";
 		try {
 			PreparedStatement ps = con.prepareStatement(query);
 			
@@ -27,12 +27,15 @@ public class AdminDao {
 				ad.setAdmin_id(rs.getInt("admin_id"));
 				ad.setAdmin_name(rs.getString("admin_name"));
 				ad.setPassword(rs.getString("admin_password"));
-				
+				ps.close();
+				con.close();
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
 		return ad;
 	}
 }

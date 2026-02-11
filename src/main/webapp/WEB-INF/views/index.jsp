@@ -18,11 +18,21 @@
 		<div id = "admin" class="card">
 		<div class="card-title"><p>Admin</p></div>
 		
-		<button class="card-action" type="button" >Login</button>
+		<div >
+		<a href = "${pageContext.request.contextPath}/Login?role=admin">
+		<button class="card-action">Login</button>
+		</a>
+		</div>
 		</div>
 		<div id ="student" class="card">
 		<div class="card-title"><p>Student</p></div>
-		<button class="card-action" type="button" >Login</button></div>
+		
+		<div >
+		<a href = "${pageContext.request.contextPath}/Login?role=student">
+		<button class="card-action">Login</button>
+		</a>
+		</div>
+		</div>
 	</div>
 	<div id="footer">
 	

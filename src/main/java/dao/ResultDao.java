@@ -25,6 +25,8 @@ public class ResultDao {
 			ps.setString(2, subject);
 			ps.setInt(3, marks);
 			rs = ps.executeUpdate();
+			ps.close();
+			con.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
