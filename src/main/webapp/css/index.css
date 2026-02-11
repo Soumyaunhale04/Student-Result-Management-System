@@ -24,9 +24,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url(https://synques-dyn-cdn.s3.ap-south-1.amazonaws.com/oriental/images/oriental-school.webp);
+    background-color: #d2f2f1;
     background-repeat: no-repeat;
-    /*background-size: cover;*/
+ 
 }
 
 .card{
@@ -36,8 +36,7 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* ⭐ KEY LINE */
-    align-items:center;
+    justify-content: space-between; 
     padding: 20px;
 }
 
