@@ -6,6 +6,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -51,10 +52,25 @@ public class LoginServlet extends HttpServlet {
 		if(role.equals("admin")) {
 			AdminDao admin = new AdminDao();
 			admin.validateAdmin(id, password);
+			
+			if(admin != null) {
+				HttpSession session = request.getSession();
+				session.setAttribute("admin", admin);
+				
+				response.sendRedirect("AdminDashboard");
+			}
 		
 		}else{
 			StudentDao student = new StudentDao();
 			student.validateStudent(id, password);
+			
+			if(student != null) {
+				HttpSession session = request.getSession();
+				
+				session.setAttribute("student", student);
+				
+				response.sendRedirect("StudentDashBoard");
+			}
 		}
 	}
 
