@@ -5,8 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+ <link rel="stylesheet" href="${pageContext.request.contextPath}/css/dashboard.css"></link>
 </head>
 <body>
-
+	<div id="header">Welcome!</div>
+	<div id="content">
+	</div>
+	<div id="footer"></div>
 </body>
 </html>

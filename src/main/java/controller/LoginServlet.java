@@ -69,7 +69,7 @@ public class LoginServlet extends HttpServlet {
 				
 				session.setAttribute("student", student);
 				
-				response.sendRedirect("StudentDashBoard");
+				response.sendRedirect("StudentDashboard");
 			}
 		}
 	}
