@@ -32,4 +32,26 @@ public class StudentDao {
 		}
 		return s;
 	}
+	
+	public boolean addStudent(Student student) {
+		Connection con = DBConnection.getConnection();
+		
+		String query = "Insert Into student(roll_no, name, branch, semester, student_password) values(?,?,?,?,?);";
+		
+		try {
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setInt(1, student.getRollno());
+			ps.setString(2, student.getName());
+			ps.setString(3, student.getBranch());
+			ps.setInt(4, student.getSemester());
+			ps.setString(5, student.getPassword());
+			
+			if(ps.executeUpdate() == 1) return true;
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
 }

@@ -10,6 +10,9 @@
 <body>
 	<div id="header">Welcome!</div>
 	<div id="content">
+	<a href="${pageContext.request.contextPath}/AddStudent">
+	<button>Add Student</button>
+	</a>
 	</div>
 	<div id="footer"></div>
 </body>

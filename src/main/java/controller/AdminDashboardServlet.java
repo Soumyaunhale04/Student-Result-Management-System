@@ -33,7 +33,7 @@ public class AdminDashboardServlet extends HttpServlet {
 		HttpSession session = request.getSession(false);
 		
 		if(session == null || session.getAttribute("admin")==null) {
-			response.sendRedirect("login?role =admin");
+			response.sendRedirect(request.getContextPath() + "/Login?role=admin");
 			return;
 		}
 		
