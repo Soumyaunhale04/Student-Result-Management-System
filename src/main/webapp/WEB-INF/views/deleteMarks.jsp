@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="${pageContext.request.contextPath}/SetMarks" method="post">
-	Roll No: <input type="text" name="roll_no"/>
+	<form action="${pageContext.request.contextPath}/DeleteMarks" method="post">
+	Roll No: <input type="text" name ="rollno"/>
 	Subject: <input type="text" name="subject"/>
-	Marks: <input type="text" name="marks"/>
 	<input type="submit" value="submit"/>
 	</form>
 </body>

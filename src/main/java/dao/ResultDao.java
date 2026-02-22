@@ -65,7 +65,22 @@ public class ResultDao {
 		
 		return list;
 	}
-
+	 public boolean deleteMarks(int rollno, String sub) {
+		String query = "delete from result where roll_no = ? AND subject = ?;";
+		int rs =0 ;
+		try {
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setInt(1, rollno);
+			ps.setString(2, sub);
+			rs = ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs == 1;
+	 }
+	 
 }
 
 

@@ -13,6 +13,14 @@
 	<a href="${pageContext.request.contextPath}/AddStudent">
 	<button>Add Student</button>
 	</a>
+	
+	<a href="${pageContext.request.contextPath}/SetMarks">
+	<button>Set Marks</button>
+	</a>
+	
+	<a href="${pageContext.request.contextPath}/DeleteMarks">
+	<button>Delete Marks</button>
+	</a>
 	</div>
 	<div id="footer"></div>
 </body>
