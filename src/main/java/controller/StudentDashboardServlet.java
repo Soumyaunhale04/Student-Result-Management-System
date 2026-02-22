@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class StudentDashboardServlet
  */
-@WebServlet("/StudentDashboardServlet")
+@WebServlet("/StudentDashboard")
 public class StudentDashboardServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -36,7 +36,7 @@ public class StudentDashboardServlet extends HttpServlet {
 				return;
 			}
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/studentDashBoard.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/studentDashboard.jsp");
 			dispatcher.forward(request, response);
 	}
 
