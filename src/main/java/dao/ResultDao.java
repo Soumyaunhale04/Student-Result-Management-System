@@ -12,7 +12,7 @@ import model.Result;
 import util.DBConnection;
 
 public class ResultDao {
-		Connection con = DBConnection.getConnection();
+		 static Connection con = DBConnection.getConnection();
 	public boolean addResult(int rollNo, String subject, int marks){
 		
 		String query = "Insert Into result (roll_no, subject, marks) VALUES(?,?,?)";
@@ -38,7 +38,7 @@ public class ResultDao {
 		}
 	
 	
-	public List<Result> getResultByRollNo(int rollNo) {
+	public static List<Result> getResultByRollNo(int rollNo) {
 		
 		String query = "SELECT roll_no, subject, marks FROM result WHERE roll_no =?";
 		List<Result> list = new ArrayList<>();

@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import model.Student;
 
 import java.io.IOException;
 
@@ -61,8 +62,8 @@ public class LoginServlet extends HttpServlet {
 			}
 		
 		}else{
-			StudentDao student = new StudentDao();
-			student.validateStudent(id, password);
+			StudentDao studao = new StudentDao();
+			Student student = studao.validateStudent(id, password);
 			
 			if(student != null) {
 				HttpSession session = request.getSession();
