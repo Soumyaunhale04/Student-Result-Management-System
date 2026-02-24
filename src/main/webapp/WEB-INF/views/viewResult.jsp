@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@ taglib prefix="c" uri="jakarta.tags.core"%>
-<%@ taglib prefix="fmt" uri="jakarta.tags.fmt"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,13 +14,13 @@
 	Branch: ${student.branch}
 	Semester : ${student.semester}
 	
-	<table>
+	<table border="2px">
 	<tr>
 	<th>Subject</th>
 	<th>Marks</th>
 	</tr>
 	
-	<c:forEach var="r" items="${result}">
+	<c:forEach var="r" items="${results}">
 	<tr>
 	<td>${r.subject}</td>
 	<td>${r.marks}</td>
