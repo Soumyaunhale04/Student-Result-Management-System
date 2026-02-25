@@ -21,6 +21,11 @@
 	<a href="${pageContext.request.contextPath}/DeleteMarks">
 	<button>Delete Marks</button>
 	</a>
+	
+	<a href="${pageContext.request.contextPath}/Logout">
+	<button>Logout</button>
+	</a>
+	
 	</div>
 	<div id="footer"></div>
 </body>
