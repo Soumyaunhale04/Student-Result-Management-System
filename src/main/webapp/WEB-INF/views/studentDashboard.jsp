@@ -13,6 +13,10 @@
 	<a href="${pageContext.request.contextPath}/ViewResult">
 	<button>View Result</button>
 	</a>
+	
+	<a href="${pageContext.request.contextPath}/Logout">
+	<button>Logout</button>
+	</a>
 	</div>
 </body>
 </html>
